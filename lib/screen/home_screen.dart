@@ -3,6 +3,7 @@ import 'package:stock_bible/screen/one_screen.dart';
 import 'package:stock_bible/screen/two_screen.dart';
 import 'package:stock_bible/screen/three_screen.dart';
 import 'package:stock_bible/screen/four_screen.dart';
+import 'package:stock_bible/banner_ad_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -85,7 +86,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: _screens[_selectedIndex],
+      // body: _screens[_selectedIndex],
+      body: Column(
+        children: [
+          Expanded(
+            child: _screens[_selectedIndex],
+          ),
+          BannerAdWidget(), //admop
+        ],
+      ),
     );
   }
 }

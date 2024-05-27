@@ -3,6 +3,10 @@
         android:label="stock_bible"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- admop id-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4116817706973954~5883727273"/>
         <activity
             android:label="주식의 정석"
             android:name=".MainActivity"
