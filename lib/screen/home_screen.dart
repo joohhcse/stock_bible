@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(
             child: _screens[_selectedIndex],
           ),
-          BannerAdWidget(), //admop
+          BannerAdWidget(), //admob
         ],
       ),
     );
